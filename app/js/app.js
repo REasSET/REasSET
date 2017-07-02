@@ -41,10 +41,15 @@ window.addEventListener('load', function() {
     if (typeof web3 !== 'undefined') {
         window.web3 = new Web3(web3.currentProvider);
     } else {
-        //alert("Для корректной работы подключитесь к Koven Testnet через MetaMask");
+        alert("Для корректной работы подключитесь к Koven Testnet через MetaMask");
     }
+
+    var addr = $("meta[name=contractAddress]");    
+
+	var contractAddress = addr.attr("value");
+
     window.contract = web3.eth.contract([{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"investingComplite","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"isRent","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"investors","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"leasePrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"undistributedIncome","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"investingTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"rent","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[],"name":"investingSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"tenantDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"tenant","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"shares","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"investingStart","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"withdrawal","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"targetPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"invest","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"deposits","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[{"name":"_name","type":"string"},{"name":"_targetPrice","type":"uint256"},{"name":"_investingTime","type":"uint256"}],"payable":false,"type":"constructor"}]
-	).at('0xec1fb01a6ae42e5c3b23c259b2bcf5a54f9a7db3');
+	).at(contractAddress);
 
 	$("#objectPrice").html().replace(/ /g, "");
 
