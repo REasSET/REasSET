@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Объект</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid navbar-dark-text">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Dream Team</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="investor.html">Инвестору</a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">Арендатору</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 section-heading">
+                <h1>Двухкомнатная квартира, м. Курская</h1>
+            </div>
+            <div class="col-md-4 margin-top-bottom-10px">
+                <img class="object-image" src="img/objects/obj1-thumb.jpg" width="100%" />
+            </div>
+            <div class="col-lg-4">
+                <h2>Описание</h2>
+                <p class="margin-top-bottom-10px">
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h2>Об объекте</h2>
+                <p class="margin-top-bottom-10px">
+                    <b>Количество комнат:</b> 2 <br />
+                    <b>Площадь:</b> 65 м² <br />
+                    <b>Адрес:</b> улица Пушкина, дом 4 корп 3 <br />
+                    <b>Цена:</b> <span id="objectPrice">3 000 000</span> <br />
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Фиксированный платёж</h1>
+            </div>
+            <div class="col-sm-6 text-right">
+                <h1 id="fixedPrice">18000</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Выкупной платёж</h1>
+            </div>
+            <div class="col-sm-6 text-right">
+                <h1 class="inline-block" id="buyoutPayment"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 silder-container">
+                <input type="range" min="8500" max='17000' id="buyoutSlider">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Вы сможете выкупить эту недвижимость через</h3>
+            </div>
+            <div class="col-sm-4 text-right"><h3 id="buyoutTime">...</h3></div>
+            <div class="col-sm-8">
+                <h3>К оплате</h3>
+            </div>
+            <div class="col-sm-4 text-right"><h3 id="total">32000</h3></div>
+            <div class="col-lg-12 text-right margin-top-bottom-10px">
+                <a class="btn btn-default" onclick="rent()">Арендовать</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Dream Team 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/clean-blog.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
