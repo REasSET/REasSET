@@ -41,21 +41,31 @@ Create three smart contracts (Investor N, Renter N, Dividend)
   - Accumulated amount of% for the investor (part is displayed in the office available for withdrawal in accordance with the proportion of the total value of the object)
 
 ## How to build 
-### Working TestRPC via Truffle
-
+### TestRPC via Truffle
+``` bash
 cd ~/REasSET
 cat truffle.js // project configuration file
 rm -r build
 truffle compile // compile contracts
 truffle migrate // deploy contracts to the network
+```
 
 ### Deploy to public test network (kovan)
 
+``` bash
 cd ~/REasSET
 rm -r build
 truffle migrate --network kovan
-check deployed contract at https://kovan.etherscan.io
+# check deployed contract at https://kovan.etherscan.io
+```
 
+### Front-end
+Every real estate object related page has corresponding contract address hardcoded in the meta tag <meta name="contractAddress" value="..." />, so in order to make it work you need to put your contract address here by yourself. Also, MetaMask won't work if you open a page with `file://`, so you need to run a simple http server, e.g. 
+``` bash
+cd app
+python3 -m http.server
+# app will be accessible at http://localhost:8000
+```
 
 # На русском
 
