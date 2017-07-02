@@ -5,6 +5,11 @@ Give the opportunity to rent an apartment and buy it at the same time!
 The REasSET is a platform for real estate acquisition through collective investment.
 ## Novelty
 Renting-redeeming! With the help of the PET token, it becomes possible to divide the real estate object for a large number of investors. A smart contract guarantees the fulfillment of conditions, reducing transaction costs.
+## Team
+* Yuriy Zubov, Project Owner
+* Albert Ibragimov, Blockchain Developer
+* Mikhail Malyshev, Frontend Developer
+* Dmitriy Kuchin, Blockchain Specialist
 ## The platform
 Etherium, because currently available interface and a set of tools (waiting for the development of QTUM :))
 ## Difficulty
@@ -35,11 +40,22 @@ Create three smart contracts (Investor N, Renter N, Dividend)
 * Dividend
   - Accumulated amount of% for the investor (part is displayed in the office available for withdrawal in accordance with the proportion of the total value of the object)
 
-## Teams
-* Yuriy Zubov, Project Owner
-* Albert Ibragimov, Blockchain Developer
-* Mikhail Malyshev, Frontend Developer
-* Dmitriy Kuchin, Blockchain Specialist
+## How to build 
+### Working TestRPC via Truffle
+
+cd ~/REasSET
+cat truffle.js // project configuration file
+rm -r build
+truffle compile // compile contracts
+truffle migrate // deploy contracts to the network
+
+### Deploy to public test network (kovan)
+
+cd ~/REasSET
+rm -r build
+truffle migrate --network kovan
+check deployed contract at https://kovan.etherscan.io
+
 
 # На русском
 
