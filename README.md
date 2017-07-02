@@ -26,14 +26,14 @@ Create a tenant's dashboard (front end)
 
 Create three smart contracts (Investor N, Renter N, Dividend)
 * Investor N (address of the contract)
-..* The amount of RET
-..* The cost of the object in RET
+  - The amount of RET
+  - The cost of the object in RET
 * Tenant N (address of the contract)
-..* Number of payments in RET
-..* 5% we transfer to a smart contract Dividend
-..* 4.26% (Or from the value of the slider) remains on the contract and accumulates with the following payments for redemption
+  - Number of payments in RET
+  - 5% we transfer to a smart contract Dividend
+  - 4.26% (Or from the value of the slider) remains on the contract and accumulates with the following payments for redemption
 * Dividend
-..* Accumulated amount of% for the investor (part is displayed in the office available for withdrawal in accordance with the proportion of the total value of the object)
+  - Accumulated amount of% for the investor (part is displayed in the office available for withdrawal in accordance with the proportion of the total value of the object)
 
 # На русском
 
@@ -59,17 +59,17 @@ Create three smart contracts (Investor N, Renter N, Dividend)
 - Выбор объекта недвижимости
 - Отображение суммы арендного платежа с учетом выкупа
 - Движок увеличения платежа для сокращения времени выкупа
-- ОК - вызов смартконтракта
+- ОК - вызов смарт-контракта
 - Кол-во RET накопленного на выкуп
 - Оставшееся кол-во времени до выкупа
                
 Создать три смарт-контракта (Инвестор N, Арендатор N,  Дивиденд)
-         Инвестор N (адрес контракта)
-- Сумма RET
-- Стоимость объекта в RET
-         Арендатор N (адрес контракта)
-- Кол-во платежа в RET
-- 5% переводим на смартконтракт Дивиденд
-- 4.26%(или от значения бегунка) остается на контракте и накапливается со следующими платежами на выкуп
-         Дивиденд
-- Накопленная сумма  % для инвестора (часть отображается в кабинете доступная для вывода в соответствии с долей от общей суммы стоимости объекта)
+* Инвестор N (адрес контракта)
+  - Сумма RET
+  - Стоимость объекта в RET
+* Арендатор N (адрес контракта)
+  - Кол-во платежа в RET
+  - 5% переводим на смартконтракт Дивиденд
+  - 4.26%(или от значения бегунка) остается на контракте и накапливается со следующими платежами на выкуп
+* Дивиденд
+  - Накопленная сумма  % для инвестора (часть отображается в кабинете доступная для вывода в соответствии с долей от общей суммы стоимости объекта)
