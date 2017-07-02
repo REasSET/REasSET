@@ -35,6 +35,12 @@ Create three smart contracts (Investor N, Renter N, Dividend)
 * Dividend
   - Accumulated amount of% for the investor (part is displayed in the office available for withdrawal in accordance with the proportion of the total value of the object)
 
+## Teams
+* Yuriy Zubov, Project Owner
+* Albert Ibragimov, Blockchain Developer
+* Mikhail Malyshev, Frontend Developer
+* Dmitriy Kuchin, Blockchain Specialist
+
 # На русском
 
 ## О проекте
@@ -73,3 +79,9 @@ Create three smart contracts (Investor N, Renter N, Dividend)
   - 4.26%(или от значения бегунка) остается на контракте и накапливается со следующими платежами на выкуп
 * Дивиденд
   - Накопленная сумма  % для инвестора (часть отображается в кабинете доступная для вывода в соответствии с долей от общей суммы стоимости объекта)
+
+## Команда
+* Юрий Зубов, Владелец проекта
+* Альберт Ибрагимов, Blockchain разработчик
+* Михаил Малышев, Frontend разработчик
+* Дмитрий Кучин, Blockchain специалист
