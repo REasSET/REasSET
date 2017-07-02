@@ -60,7 +60,7 @@ truffle migrate --network kovan
 ```
 
 ### Front-end
-Every real estate object related page has corresponding contract address hardcoded in the meta tag <meta name="contractAddress" value="..." />, so in order to make it work you need to put your contract address here by yourself. Also, MetaMask won't work if you open a page with `file://`, so you need to run a simple http server, e.g. 
+Every real estate object related page has corresponding contract address hardcoded in the meta tag `<meta name="contractAddress" value="..." />`, so in order to make it work you need to put your contract address here by yourself. Also, MetaMask won't work if you open a page with `file://`, so you need to run a simple http server, e.g. 
 ``` bash
 cd app
 python3 -m http.server
